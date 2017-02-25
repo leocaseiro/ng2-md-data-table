@@ -1,0 +1,172 @@
+:host > table {
+  font-family: Roboto, Arial, sans-serif;
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 13px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+:host > table md-checkbox,
+:host > table md-checkbox {
+  margin: 0;
+  width: 18px;
+  vertical-align: middle;
+}
+
+:host > table > thead > tr,
+:host > table > tbody > tr,
+:host > table > thead > tr,
+:host > table > tbody > tr {
+  vertical-align: middle;
+}
+
+:host > table > thead > tr:last-child,
+:host > table > tbody > tr:last-child,
+:host > table > thead > tr:last-child,
+:host > table > tbody > tr:last-child {
+  height: 56px;
+}
+
+:host > table > thead > tr > th,
+:host > table > tbody > tr > td,
+:host > table > thead > tr > th,
+:host > table > tbody > tr > td {
+  padding: 0 32px 0 24px;
+  text-align: right;
+}
+
+:host > table > thead > tr > th:first-of-type,
+:host > table > tbody > tr > td:first-of-type,
+:host > table > thead > tr > th:first-of-type,
+:host > table > tbody > tr > td:first-of-type {
+  padding-left: 24px;
+}
+
+:host > table > thead > tr > th:last-of-type,
+:host > table > tbody > tr > td:last-of-type,
+:host > table > thead > tr > th:last-of-type,
+:host > table > tbody > tr > td:last-of-type {
+  padding-right: 24px;
+}
+
+:host > table > thead > tr > th.md-text-cell,
+:host > table > tbody > tr > td.md-text-cell,
+:host > table > thead > tr > th.md-text-cell,
+:host > table > tbody > tr > td.md-text-cell {
+  text-align: left;
+}
+
+:host > table > thead > tr > th.md-data-check-cell,
+:host > table > tbody > tr > td.md-data-check-cell,
+:host > table > thead > tr > th.md-data-check-cell,
+:host > table > tbody > tr > td.md-data-check-cell {
+  padding: 0 0 0 24px;
+  width: 18px;
+}
+
+:host > table > thead > tr > th,
+:host > table > thead > tr > th {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.54);
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  /*
+   TODO (ollwenjones) sorting functionality pending, but these class names
+   were tested, and can be used outside of the library component structures.
+   */
+}
+
+:host > table > thead > tr > th.sortable,
+:host > table > thead > tr > th.sortable {
+  cursor: pointer;
+}
+
+:host > table > thead > tr > th.sorted-ascending,
+:host > table > thead > tr > th.sorted-descending,
+:host > table > thead > tr > th.sorted-ascending,
+:host > table > thead > tr > th.sorted-descending {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+:host > table > thead > tr > th.sorted-ascending:before,
+:host > table > thead > tr > th.sorted-descending:before,
+:host > table > thead > tr > th.sorted-ascending:before,
+:host > table > thead > tr > th.sorted-descending:before {
+  font-family: 'Material Icons';
+  font-size: 16px;
+  content: "\e5d8";
+  margin-right: 5px;
+  vertical-align: sub;
+}
+
+:host > table > thead > tr > th.sorted-ascending:hover,
+:host > table > thead > tr > th.sorted-descending:hover,
+:host > table > thead > tr > th.sorted-ascending:hover,
+:host > table > thead > tr > th.sorted-descending:hover {
+  cursor: pointer;
+}
+
+:host > table > thead > tr > th.sorted-ascending:hover:before,
+:host > table > thead > tr > th.sorted-descending:hover:before,
+:host > table > thead > tr > th.sorted-ascending:hover:before,
+:host > table > thead > tr > th.sorted-descending:hover:before {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+:host > table > thead > tr > th.sorted-descending:before,
+:host > table > thead > tr > th.sorted-descending:before {
+  content: "\e5db";
+}
+
+:host > table > tbody > tr > td,
+:host > table > tbody > tr > td {
+  position: relative;
+  vertical-align: middle;
+  height: 48px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+:host > table > thead > tr > th:first-child,
+:host > table > tbody > tr > td:first-child,
+:host > table > thead > tr > th:first-child,
+:host > table > tbody > tr > td:first-child {
+  padding-left: 24px;
+}
+
+:host > table > thead > tr > th:last-child,
+:host > table > tbody > tr > td:last-child,
+:host > table > thead > tr > th:last-child,
+:host > table > tbody > tr > td:last-child {
+  padding-right: 24px;
+}
+
+:host > table > thead > tr,
+:host > table > tbody > tr,
+:host > table > thead > tr,
+:host > table > tbody > tr {
+  position: relative;
+  height: 48px;
+}
+
+:host > table > tbody > tr.selected,
+:host > table > tbody > tr.active,
+:host > table > .md-data-tbody > tr.selected,
+:host > table > .md-data-tbody > tr.active,
+:host > table > tbody > tr.selected,
+:host > table > tbody > tr.active,
+:host > table > .md-data-tbody > tr.selected,
+:host > table > .md-data-tbody > tr.active {
+  background-color: whitesmoke;
+}
+
+:host > table > tbody > tr:hover,
+:host > table > .md-data-tbody > tr:hover,
+:host > table > tbody > tr:hover,
+:host > table > .md-data-tbody > tr:hover {
+  background-color: #eeeeee;
+}

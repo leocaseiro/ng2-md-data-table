@@ -28,6 +28,7 @@ export interface INg2TableSelectionChange {
 }
 
 @Component({
+    moduleId: module.id,
     selector: 'ng2-md-data-table',
     template: `<ng-content></ng-content>`,
     styleUrls: ['./data-table.css'],

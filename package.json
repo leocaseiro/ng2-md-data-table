@@ -2,7 +2,8 @@
   "name": "ng2-md-data-table",
   "version": "0.1.0",
   "scripts": {
-    "build": "ngc -p tsconfig.json",
+    "copy:css": "copyfiles -u 1 src/**/*.css dist/",
+    "build": "npm run copy:css && ngc -p tsconfig.json",
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",
     "prepublish": "tsc",
@@ -13,19 +14,28 @@
     "url": "https://github.com/leocaseiro/ng2-md-data-table"
   },
   "author": {
-    "name": "leocaseiro",
+    "name": "Leo Caseiro",
     "email": "leobok@gmail.com"
   },
   "keywords": [
-    "angular"
+    "angular",
+    "material",
+    "table",
+    "data-table"
   ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/leocaseiro/ng2-md-data-table/issues"
   },
   "main": "./dist/index.js",
+  "module": "index.js",
+  "typings": "index.d.ts",
   "dependencies": {
     "@angular/material": "^2.0.0-beta.2"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=2.4.8 || >=4.0.0-rc.4",
+    "@angular/material": ">= 2.0.0-beta.2"
   },
   "devDependencies": {
     "@angular/common": "^2.4.8",
@@ -37,15 +47,16 @@
     "@angular/platform-browser": "^2.4.8",
     "@angular/platform-browser-dynamic": "^2.4.8",
     "@angular/platform-server": "^2.4.8",
+    "@types/es6-shim": "^0.31.32",
+    "@types/jasmine": "^2.5.40",
+    "@types/protractor": "^4.0.0",
+    "@types/selenium-webdriver": "^2.53.39",
     "codelyzer": "^0.0.28",
+    "copyfiles": "^1.2.0",
     "rxjs": "^5.0.1",
     "tslint": "^3.15.1",
     "typescript": "2.0.2",
-    "zone.js": "0.7.2",
-    "@types/es6-shim": "^0.31.32",
-    "@types/protractor": "^4.0.0",
-    "@types/jasmine": "^2.5.40",
-    "@types/selenium-webdriver": "^2.53.39"
+    "zone.js": "0.7.2"
   },
   "engines": {
     "node": ">=0.8.0"

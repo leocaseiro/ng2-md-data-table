@@ -1,5 +1,7 @@
 # ng2-md-data-table
 
+> ATTENTION: This library is currently in development and is not ready to use in production
+
 ## Installation
 
 To install this library, run:
@@ -66,3 +68,5 @@ $ npm run lint
 ## License
 
 MIT © [leocaseiro](mailto:leobok@gmail.com)
+
+> Forked from [ng2-material](https://github.com/justindujardin/ng2-material) 

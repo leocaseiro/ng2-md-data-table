@@ -1,0 +1,174 @@
+ng2-md-data-table,
+.ng2-md-data-table {
+  font-family: Roboto, Arial, sans-serif;
+  display: table;
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 13px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+ng2-md-data-table md-checkbox,
+.ng2-md-data-table md-checkbox {
+  margin: 0;
+  width: 18px;
+  vertical-align: middle;
+}
+
+ng2-md-data-table > thead > tr,
+ng2-md-data-table > tbody > tr,
+.ng2-md-data-table > thead > tr,
+.ng2-md-data-table > tbody > tr {
+  vertical-align: middle;
+}
+
+ng2-md-data-table > thead > tr:last-child,
+ng2-md-data-table > tbody > tr:last-child,
+.ng2-md-data-table > thead > tr:last-child,
+.ng2-md-data-table > tbody > tr:last-child {
+  height: 56px;
+}
+
+ng2-md-data-table > thead > tr > th,
+ng2-md-data-table > tbody > tr > td,
+.ng2-md-data-table > thead > tr > th,
+.ng2-md-data-table > tbody > tr > td {
+  padding: 0 32px 0 24px;
+  text-align: right;
+}
+
+ng2-md-data-table > thead > tr > th:first-of-type,
+ng2-md-data-table > tbody > tr > td:first-of-type,
+.ng2-md-data-table > thead > tr > th:first-of-type,
+.ng2-md-data-table > tbody > tr > td:first-of-type {
+  padding-left: 24px;
+}
+
+ng2-md-data-table > thead > tr > th:last-of-type,
+ng2-md-data-table > tbody > tr > td:last-of-type,
+.ng2-md-data-table > thead > tr > th:last-of-type,
+.ng2-md-data-table > tbody > tr > td:last-of-type {
+  padding-right: 24px;
+}
+
+ng2-md-data-table > thead > tr > th.md-text-cell,
+ng2-md-data-table > tbody > tr > td.md-text-cell,
+.ng2-md-data-table > thead > tr > th.md-text-cell,
+.ng2-md-data-table > tbody > tr > td.md-text-cell {
+  text-align: left;
+}
+
+ng2-md-data-table > thead > tr > th.md-data-check-cell,
+ng2-md-data-table > tbody > tr > td.md-data-check-cell,
+.ng2-md-data-table > thead > tr > th.md-data-check-cell,
+.ng2-md-data-table > tbody > tr > td.md-data-check-cell {
+  padding: 0 0 0 24px;
+  width: 18px;
+}
+
+ng2-md-data-table > thead > tr > th,
+.ng2-md-data-table > thead > tr > th {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.54);
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  /*
+   TODO (ollwenjones) sorting functionality pending, but these class names
+   were tested, and can be used outside of the library component structures.
+   */
+}
+
+ng2-md-data-table > thead > tr > th.sortable,
+.ng2-md-data-table > thead > tr > th.sortable {
+  cursor: pointer;
+}
+
+ng2-md-data-table > thead > tr > th.sorted-ascending,
+ng2-md-data-table > thead > tr > th.sorted-descending,
+.ng2-md-data-table > thead > tr > th.sorted-ascending,
+.ng2-md-data-table > thead > tr > th.sorted-descending {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+ng2-md-data-table > thead > tr > th.sorted-ascending:before,
+ng2-md-data-table > thead > tr > th.sorted-descending:before,
+.ng2-md-data-table > thead > tr > th.sorted-ascending:before,
+.ng2-md-data-table > thead > tr > th.sorted-descending:before {
+  font-family: 'Material Icons';
+  font-size: 16px;
+  content: "\e5d8";
+  margin-right: 5px;
+  vertical-align: sub;
+}
+
+ng2-md-data-table > thead > tr > th.sorted-ascending:hover,
+ng2-md-data-table > thead > tr > th.sorted-descending:hover,
+.ng2-md-data-table > thead > tr > th.sorted-ascending:hover,
+.ng2-md-data-table > thead > tr > th.sorted-descending:hover {
+  cursor: pointer;
+}
+
+ng2-md-data-table > thead > tr > th.sorted-ascending:hover:before,
+ng2-md-data-table > thead > tr > th.sorted-descending:hover:before,
+.ng2-md-data-table > thead > tr > th.sorted-ascending:hover:before,
+.ng2-md-data-table > thead > tr > th.sorted-descending:hover:before {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+ng2-md-data-table > thead > tr > th.sorted-descending:before,
+.ng2-md-data-table > thead > tr > th.sorted-descending:before {
+  content: "\e5db";
+}
+
+ng2-md-data-table > tbody > tr > td,
+.ng2-md-data-table > tbody > tr > td {
+  position: relative;
+  vertical-align: middle;
+  height: 48px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+ng2-md-data-table > thead > tr > th:first-child,
+ng2-md-data-table > tbody > tr > td:first-child,
+.ng2-md-data-table > thead > tr > th:first-child,
+.ng2-md-data-table > tbody > tr > td:first-child {
+  padding-left: 24px;
+}
+
+ng2-md-data-table > thead > tr > th:last-child,
+ng2-md-data-table > tbody > tr > td:last-child,
+.ng2-md-data-table > thead > tr > th:last-child,
+.ng2-md-data-table > tbody > tr > td:last-child {
+  padding-right: 24px;
+}
+
+ng2-md-data-table > thead > tr,
+ng2-md-data-table > tbody > tr,
+.ng2-md-data-table > thead > tr,
+.ng2-md-data-table > tbody > tr {
+  position: relative;
+  height: 48px;
+}
+
+ng2-md-data-table > tbody > tr.selected,
+ng2-md-data-table > tbody > tr.active,
+ng2-md-data-table > .md-data-tbody > tr.selected,
+ng2-md-data-table > .md-data-tbody > tr.active,
+.ng2-md-data-table > tbody > tr.selected,
+.ng2-md-data-table > tbody > tr.active,
+.ng2-md-data-table > .md-data-tbody > tr.selected,
+.ng2-md-data-table > .md-data-tbody > tr.active {
+  background-color: whitesmoke;
+}
+
+ng2-md-data-table > tbody > tr:hover,
+ng2-md-data-table > .md-data-tbody > tr:hover,
+.ng2-md-data-table > tbody > tr:hover,
+.ng2-md-data-table > .md-data-tbody > tr:hover {
+  background-color: #eeeeee;
+}
