@@ -1,6 +1,6 @@
 # ng2-md-data-table
 
-> ATTENTION: This library is currently in development and is not ready to use in production
+> DEPRECATED: Use the official library https://material.angular.io/components/table/overview
 
 ## Installation
 
